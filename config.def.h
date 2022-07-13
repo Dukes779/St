@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Shure Tech Mono Nerd Font:pixelsize=15:antialias=true:autohint=true";
+static char *font = "JetBrainsMono-Regular:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 6;
 
 /*
@@ -117,7 +117,7 @@ static const char *colorname[] = {
 		"#D9E0EE",
 
 	[256] = "#D9E0EE", /* default foreground colour */
-	[257] = "#0B0716", /* default background colour */
+	[257] = "#191828", /* default background colour */
 	[258] = "#C3BAC6", /*575268*/
 
 };
