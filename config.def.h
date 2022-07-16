@@ -95,34 +95,33 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
-
 static const char *colorname[] = {
-          /* 8 normal colors */
-                     "#282828",
-                     "#a91e18",
-                     "#888717",
-                     "#c58c1e",
-                     "#386d6f",
-                     "#8f4f6c",
-                     "#578459",
-                     "#8f8270",
-                     "#817466",
+      /* 8 normal colors */
+      "#0a0f14",
+      "#c33027",
+      "#26a98b",
+      "#89692b",
+      "#195465",
+      "#4e5165",
+      "#33859d",
+      "#98d1ce",
+      "#10151b",
 
-             /* 8 bright colors */
-                     "#da3f2d",
-                     "#b8bb26",
-                     "#dba629",
-                     "#658075",
-                     "#bf798c",
-                     "#739b64",
-                      "#baad8d",
+     /* 8  bright colors */
+      "#d26939",
+      "#124564",
+      "#2f6b7d",
+      "#0f5d7a",
+      "#888ba5",
+      "#599caa",
+      "#b0c4c2",
 
-            [256] = "#cbbd9a", /* default foreground colour */
-          	[257] = "#272727", /* default background colour */
-        	[258] = "#cbbd9a", /*575268*/
+    [256] = "#90c7c4",
+    [257] = "#002B36",
+    [258] = "#90c7c4",
+
 
 };
-
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
