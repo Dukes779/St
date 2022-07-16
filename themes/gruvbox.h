@@ -1,36 +1,26 @@
-! special
-*.foreground:   #cbbd9a
-*.background:   #272727
-*.cursorColor:  #cbbd9a
+static const char *colorname[] = {
+          /* 8 normal colors */
+                     "#282828",
+                     "#a91e18",
+                     "#888717",
+                     "#c58c1e",
+                     "#386d6f",
+                     "#8f4f6c",
+                     "#578459",
+                     "#8f8270",
+                     "#817466",
 
-! black
-*.color0:       #282828
-*.color8:       #817466
+             /* 8 bright colors */
+                     "#da3f2d",
+                     "#b8bb26",
+                     "#dba629",
+                     "#658075",
+                     "#bf798c",
+                     "#739b64",
+                      "#baad8d",
 
-! red
-*.color1:       #a91e18
-*.color9:       #da3f2d
+            [256] = "#cbbd9a", /* default foreground colour */
+          	[257] = "#272727", /* default background colour */
+        	[258] = "#cbbd9a", /*575268*/
 
-! green
-*.color2:       #888717
-*.color10:      #b8bb26
-
-! yellow
-*.color3:       #c58c1e
-*.color11:      #dba629
-
-! blue
-*.color4:       #386d6f
-*.color12:      #658075
-
-! magenta
-*.color5:       #8f4f6c
-*.color13:      #bf798c
-
-! cyan
-*.color6:       #578459
-*.color14:      #739b64
-
-! white
-*.color7:       #8f8270
-*.color15:      #baad8d
+};
