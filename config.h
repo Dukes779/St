@@ -117,13 +117,12 @@ static const char *colorname[] = {
       "#b0c4c2",
 
     [256] = "#90c7c4",
-    [257] = "#002B36",
+    [257] = "#0a0f14",
     [258] = "#90c7c4",
 
 
 };
-/*
- * Default colors (colorname index)
+/* Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 256;
@@ -144,7 +143,7 @@ static unsigned int defaultrcs = 258;
  * 7: blinking st cursor
  * 8: steady st cursor
  */
-static unsigned int cursorstyle = 1;
+static unsigned int cursorstyle = 5;
 static Rune stcursor = 0x2603; /* snowman ("☃") */
 
 /*
@@ -243,6 +242,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+    { TERMMOD,               XK_l,           copyurl,        {.i =  0} },
 };
 
 /*
