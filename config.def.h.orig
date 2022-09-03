@@ -96,30 +96,29 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-      /* 8 normal colors */
-      "#0a0f14",
-      "#c33027",
-      "#26a98b",
-      "#89692b",
-      "#195465",
-      "#4e5165",
-      "#33859d",
-      "#98d1ce",
-      "#10151b",
+          /* 8 normal colors */
+                     "#282828",
+                     "#a91e18",
+                     "#888717",
+                     "#c58c1e",
+                     "#386d6f",
+                     "#8f4f6c",
+                     "#578459",
+                     "#8f8270",
+                     "#817466",
 
-     /* 8  bright colors */
-      "#d26939",
-      "#124564",
-      "#2f6b7d",
-      "#0f5d7a",
-      "#888ba5",
-      "#599caa",
-      "#b0c4c2",
+             /* 8 bright colors */
+                     "#da3f2d",
+                     "#b8bb26",
+                     "#dba629",
+                     "#658075",
+                     "#bf798c",
+                     "#739b64",
+                      "#baad8d",
 
-    [256] = "#90c7c4",
-    [257] = "#0a0f14",
-    [258] = "#90c7c4",
-
+            [256] = "#cbbd9a", /* default foreground colour */
+          	[257] = "#272727", /* default background colour */
+        	[258] = "#cbbd9a", /*575268*/
 
 };
 /* Default colors (colorname index)
@@ -320,7 +319,7 @@ static Key key[] = {
 	{ XK_KP_Delete,     ControlMask,    "\033[3;5~",    +1,    0},
 	{ XK_KP_Delete,     ShiftMask,      "\033[2K",      -1,    0},
 	{ XK_KP_Delete,     ShiftMask,      "\033[3;2~",    +1,    0},
-	{ XK_KP_Delete,     XK_ANY_MOD,     "\033[P",       -1,    0},
+	{ XK_KP_Delete,     XK_ANY_MOD,     "\033[3~",       -1,    0},
 	{ XK_KP_Delete,     XK_ANY_MOD,     "\033[3~",      +1,    0},
 	{ XK_KP_Multiply,   XK_ANY_MOD,     "\033Oj",       +2,    0},
 	{ XK_KP_Add,        XK_ANY_MOD,     "\033Ok",       +2,    0},
@@ -388,7 +387,7 @@ static Key key[] = {
 	{ XK_Delete,        ControlMask,    "\033[3;5~",    +1,    0},
 	{ XK_Delete,        ShiftMask,      "\033[2K",      -1,    0},
 	{ XK_Delete,        ShiftMask,      "\033[3;2~",    +1,    0},
-	{ XK_Delete,        XK_ANY_MOD,     "\033[P",       -1,    0},
+	{ XK_Delete,        XK_ANY_MOD,     "\033[3~",       -1,    0},
 	{ XK_Delete,        XK_ANY_MOD,     "\033[3~",      +1,    0},
 	{ XK_BackSpace,     XK_NO_MOD,      "\177",          0,    0},
 	{ XK_BackSpace,     Mod1Mask,       "\033\177",      0,    0},
